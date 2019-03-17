@@ -18,8 +18,8 @@ export default function resultMaking(state) {
 
 
     if (banglaGpa === 0 || mathGpa === 0 || englishGpa === 0) {
-        resultStore.totalGpa = 'NaN';
-        resultStore.cgpa = 'NaN';
+        resultStore.totalGpa = '0';
+        resultStore.cgpa = '0';
         resultStore.totalGrade = 'F';
 
         // result return
