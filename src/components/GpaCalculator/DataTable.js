@@ -90,7 +90,7 @@ export default class DataTable extends Component {
                                         <button type="button" className="btn btn-primary rounded-0" onClick={this.createResult}>Result</button>
                                     </td>
                                     <td>
-                                        <strong>CGPA : </strong> {parseFloat(this.state.result.cgpa).toFixed(2)}
+                                        <strong>CGPA : </strong> { parseFloat(this.state.result.cgpa) ? parseFloat(this.state.result.cgpa).toFixed(2) : this.state.result.cgpa }
                                     </td>
                                     <td>
                                         <strong>Total Grade : </strong>  {this.state.result.totalGrade}
